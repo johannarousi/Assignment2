@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+.header-div {
+  background-color: #414141;
+}
+.image-div {
+  width: 32%;
+}
+.title-div {
+  width: 32%;
+  height: 200px;
+}
+img {
+  width: 100%;
+}
+body {
+  background-color: #efefef;
+}
+main {
+  height: 400px;
+  width: 100%;
+}
+.footer-div {
+  background-color: #3f3f3f;
+  height: 200px;
+  width: 100%;
+}
