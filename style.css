@@ -22,9 +22,6 @@ header {
   height: 280px;
   border: 1px solid yellow;
   color: white;
-
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 h1 {
   font-size: 25px;
@@ -33,27 +30,37 @@ h1 {
 .title-div p {
   padding: 25px;
 }
-.header-button {
-  background-color: 
+
+.button-header {
+  background-color: #458ed2;
   border: none;
   color: White;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14pt;
-  margin: 3px;
+  font-size: 9pt;
+  padding: 10px 40px 10px 40px;
+  margin: 25px;
+  border-radius: 3px;
 }
+
 #image-header {
   width: 100%;
 }
 .header-bottom {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   margin-left: 15%;
   margin-right: 15%;
   background-color: #458ed2;
   color: white;
   font-size: 12pt;
-  padding: 20px;
+}
+.header-bottom p {
+  align-self: center;
+  margin-left: 4%;
+  font-size: 16pt;
 }
 .header-bottom::after {
   position: absolute;
@@ -65,9 +72,21 @@ h1 {
   border-top: 50px solid #458ed2;
   border-right: 40px solid transparent;
 }
-#border-image {
-  width: 100px;
-  margin-right: 0;
+.button-header-bottom {
+  background-color: #efefef;
+  border: none;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 9pt;
+  padding: 10px 40px 10px 40px;
+  margin: 25px;
+  border-radius: 3px;
+}
+.border-image-header {
+  border-bottom: 10px solid transparent;
+  border-image: url("/images/Border-BG.jpg") 72 repeat;
 }
 border-div {
   display: flex;
@@ -75,21 +94,28 @@ border-div {
 }
 body {
   background-color: #efefef;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 main {
   margin-left: 15%;
   margin-right: 15%;
 }
+main p {
+  font-size: 10pt;
+}
 .main1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 3% 0 3% 0;
 }
 
 .main1 div {
   padding: 10px;
   text-align: center;
+  width: 24%;
 }
 i {
   font-size: 50px;
@@ -98,22 +124,174 @@ h3 {
   font-size: 12pt;
   padding: 5px;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: yellow;
+.border-image-main {
+  border-top: 10px solid transparent;
+  border-image: url("/images/Border-BG.jpg") 72 repeat;
 }
-.grid-item {
+fieldset {
+  border: 0;
+}
+legend {
+  text-align: center;
+  padding: 10px;
+}
+.main2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0 6% 0;
+}
+.main2 div {
+  width: 32%;
   background-color: white;
-  border: 1px solid green;
+  position: relative;
+}
+.main2 div:before {
+  content: "";
+  display: block;
+  height: 80%;
+  width: 20px;
+  box-shadow: 5px 0 20px rgba(41, 40, 40, 0.5);
+  position: absolute;
+  top: 10%;
+  right: 0;
+  border-radius: 100%;
+  z-index: -1;
+}
+.main2 div::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 100%;
+  border-top: 35px solid white;
+  border-right: 30px solid transparent;
+}
+.main2 div p {
+  padding: 10px 20px 20px 20px;
+}
+h4 {
+  padding: 20px 20px 0px 20px;
 }
 
 .placeholder-img {
   width: 100%;
 }
+.main3 {
+  display: flex;
+  justify-content: space-between;
+}
+.fieldset1 {
+  padding-right: 1%;
+  width: 66.666%;
+}
+.fieldset2 {
+  padding-left: 1%;
+  width: 33.333%;
+}
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3% 0 6% 0;
+}
+.testimonials div {
+  position: relative;
+  background-color: white;
+  margin-bottom: 8%;
+  width: 48.5%;
+}
 
-.footer-div {
+.testimonials div:before {
+  content: "";
+  display: block;
+  height: 80%;
+  width: 20px;
+  box-shadow: 5px 0 20px rgba(41, 40, 40, 0.5);
+  position: absolute;
+  top: 10%;
+  right: 0;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.testimonials div::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 100%;
+  border-top: 35px solid white;
+  border-right: 30px solid transparent;
+}
+.testimonials div p {
+  padding: 10px 20px 20px 20px;
+}
+.design {
+  background-color: white;
+  margin: 3% 0 6% 0;
+  position: relative;
+}
+.design:before {
+  content: "";
+  display: block;
+  height: 80%;
+  width: 20px;
+  box-shadow: 5px 0 20px rgba(41, 40, 40, 0.5);
+  position: absolute;
+  top: 10%;
+  right: 0;
+  border-radius: 100%;
+  z-index: -1;
+}
+.design p {
+  padding: 10px 20px 20px 20px;
+}
+.button-design {
+  background-color: #458ed2;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 9pt;
+  padding: 10px 20px 10px 20px;
+  margin: 25px;
+  border-radius: 3px;
+}
+h5 {
+  padding: 20px 20px 0px 20px;
+}
+footer {
   background-color: #3f3f3f;
-  height: 200px;
   width: 100%;
+}
+.footer-top {
+  position: relative;
+  background-color: #458ed2;
+  color: white;
+  font-size: 12pt;
+  padding: 20px;
+}
+.footer-top::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 100%;
+  border-top: 50px solid #458ed2;
+  border-right: 40px solid transparent;
+}
+.footer-div {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-div div {
+  color: white;
+}
+.footer-bottom {
 }

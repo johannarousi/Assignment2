@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="border-image-header">
       <div class="header-div">
         <div class="image-div">
           <img src="./images/Header-img.png" alt="devices" id="image-header" />
@@ -13,13 +13,15 @@
         <div class="title-div">
           <h1><span style="font-style: oblique">POWERFULLY SIMPLE</span> <span style="color: gray">WITH A</span> <span style="font-style: oblique">SQEEKY CLEAN</span> <span style="color:gray">DESIGN.</span></h1> 
           <p>Find out how you can offer quick and powerful solutions to your customers now!</p><br/>
-          <label><input type="button" id="header-button"></label>
+          <a class="button-header">LEARN MORE</a>
         </div>
       </div>
       <div class="header-bottom">
-        <h2>CREATE A POWERFUL SOLUTION NOW!</h2>
+        <p>CREATE A <span style="font-style: oblique"><strong>POWERFUL</strong></span> SOLUTION NOW!</p>
+        <a class="button-header-bottom">GET STARTED</a>
       </div>
     </header>
+   
     <main>
       <div class="main1">
         <div>
@@ -61,9 +63,9 @@
           </p>
         </div>
       </div>
-     
-        <div class="grid-container">
-          <div class="grid-item">
+     <fieldset class="border-image-main"><legend>RECENT WORK</legend></fieldset>
+        <div class="main2">
+          <div>
         
           <img
             src="images/img-placeholder.png"
@@ -73,7 +75,7 @@
           <h4>Blog Title</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quam natus iusto temporibus eligendi. Voluptatum, sit corporis? Numquam?</p>
         </div>
-        <div class="grid-item">
+        <div>
           <img
             src="images/img-placeholder.png"
             alt="placeholder-envelop"
@@ -82,7 +84,7 @@
           <h4>Blog Title</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis cum exercitationem ut repellendus tempore a alias expedita dolore!</p>
         </div>
-        <div class="grid-item">
+        <div>
           <img
             src="images/img-placeholder.png"
             alt="placeholder-envelop"
@@ -91,19 +93,26 @@
           <h4>Blog Title</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur animi eligendi dolore assumenda distinctio suscipit in, officiis eius.</p>
         </div>
-        
+        </div>
       
       
-        <div class="grid-item">
-          
-            <h4>John Smith1</h4>
+        <div class=main3>
+          <div class="fieldset1">
+      
+            <fieldset class="border-image-main"><legend>TESTIMONIALS</legend>
+
+
+            <div class="testimonials">
+            <div class="testimonials-div">
+            <h5>John Smith1</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               sequi aperiam corrupti mollitia! Accusantium, laudantium incidunt
               amet corporis officiis commodi dolore quae.
             </p>
-          
-            <h4>John Smith2</h4>
+            </div>
+            <div class="testimonials-div">
+            <h5>John Smith2</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               sequi aperiam corrupti mollitia! Accusantium, laudantium incidunt
@@ -111,26 +120,32 @@
             </p>
           </div>
 
-          <div class="grid-item">
-            <h4>John Smith3</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              sequi aperiam corrupti mollitia! Accusantium, laudantium incidunt
-              amet corporis officiis commodi dolore quae.
-            </p>
-          
-            <h4>John Smith4</h4>
+          <div class="testimonials-div">
+            <h5>John Smith3</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
               sequi aperiam corrupti mollitia! Accusantium, laudantium incidunt
               amet corporis officiis commodi dolore quae.
             </p>
           </div>
+          <div class="testimonials-div">
+            <h5>John Smith4</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              sequi aperiam corrupti mollitia! Accusantium, laudantium incidunt
+              amet corporis officiis commodi dolore quae.
+            </p>
+            </div>
+            </div>
+          </fieldset>
+        </div>
         
-        
-
-        <div class="grid-item">
+        <div class="fieldset2">
+          <fieldset class="border-image-main"><legend>DEVELOPMENT</legend>
+        <div class="design">
+          
         <h4>Design</h4>
+        <h5>The Design</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi
           aperiam corrupti mollitia! Accusantium, laudantium incidunt amet
@@ -141,11 +156,25 @@
           aperiam corrupti mollitia! Accusantium, laudantium incidunt amet
           corporis officiis commodi dolore quae.
         </p>
+        <a href="#" class="button-design">READ MORE</a>
       </div>
+    </fieldset>
+    </div>
       </div>
+     
+      <div class="footer-top">
+          <h2>GET IN TOUCH WITH US NOW!</h2>
+        </div>
     </main>
     <footer>
-      <div class="footer-div"></div>
+      <div class="footer-div">
+        <div><h5>ABOUT US</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique harum exercitationem expedita corporis vel.</p></div>
+        <div><h5>LATEST TWEETS</h5><p></p></div>
+        <div><h5>LATEST POSTS</h5></div>
+        <div><h5>FLICKR</h5></div>
+      </div>
+      <div class="footer-bottom"></div>
     </footer>
   </body>
 </html>
