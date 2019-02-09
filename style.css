@@ -10,11 +10,11 @@ header {
   display: flex;
   justify-content: center;
   border: 1px solid green;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 .image-div {
-  width: 45%;
+  width: 47%;
   border: 1px solid red;
 }
 .title-div {
@@ -51,13 +51,13 @@ h1 {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 12%;
+  margin-right: 12%;
   background-color: #458ed2;
   color: white;
   font-size: 12pt;
 }
-.header-bottom p {
+h2 {
   align-self: center;
   margin-left: 4%;
   font-size: 16pt;
@@ -85,8 +85,8 @@ h1 {
   border-radius: 3px;
 }
 .border-image-header {
-  border-bottom: 10px solid transparent;
-  border-image: url("/images/Border-BG.jpg") 72 repeat;
+  border-bottom: 12px solid transparent;
+  border-image: url("/images/Border-BG.jpg") 50 repeat;
 }
 border-div {
   display: flex;
@@ -94,13 +94,12 @@ border-div {
 }
 body {
   background-color: #efefef;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 main {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 main p {
   font-size: 10pt;
@@ -109,24 +108,72 @@ main p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 3% 0 3% 0;
+  margin: 6% 0 6% 0;
+}
+
+i {
+  color: white;
+  font-size: 26px;
+  /* margin-bottom: 18%; */
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: radial-gradient(gray, #474647);
+  width: 80px !important;
+  height: 80px !important;
+  margin: 0 auto;
 }
 
 .main1 div {
-  padding: 10px;
+  padding: 3%;
   text-align: center;
   width: 24%;
+  position: relative;
 }
-i {
-  font-size: 50px;
+
+.main1 div:hover {
+  background-color: white;
+}
+.main1 div:hover:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 100%;
+  border-top: 35px solid white;
+  border-right: 30px solid transparent;
+}
+.main1 div p {
+  margin-bottom: 10%;
+  padding: 1%;
+}
+.button-main1 {
+  background-color: #458ed2;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 9pt;
+  padding: 10px 25px 10px 25px;
+  margin: 25px;
+  border-radius: 3px;
 }
 h3 {
   font-size: 12pt;
   padding: 5px;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
 .border-image-main {
-  border-top: 10px solid transparent;
-  border-image: url("/images/Border-BG.jpg") 72 repeat;
+  border-top: 12px solid transparent;
+  border-image: url("/images/Border-BG.jpg") 50 repeat;
 }
 fieldset {
   border: 0;
@@ -193,12 +240,13 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 3% 0 6% 0;
+  margin: 40px 0 6% 0;
 }
 .testimonials div {
   position: relative;
   background-color: white;
-  margin-bottom: 8%;
+  padding-bottom: 4%;
+  margin-bottom: 7%;
   width: 48.5%;
 }
 
@@ -226,14 +274,46 @@ h4 {
   border-right: 30px solid transparent;
 }
 .testimonials div p {
-  padding: 10px 20px 20px 20px;
+  padding: 5% 8% 5% 5%;
 }
-.design {
+.tabs {
   background-color: white;
-  margin: 3% 0 6% 0;
   position: relative;
+  clear: both;
+  margin-top: 60px;
 }
-.design:before {
+.tabs .tab {
+  float: left;
+}
+
+.checkboxtab {
+  display: none;
+}
+.tabs .tab label {
+  background: gray;
+  padding: 20px;
+}
+.checkboxtab:checked ~ label {
+  background: white;
+}
+.checkboxtab:checked ~ .content {
+  z-index: 1;
+}
+
+.content {
+  margin-top: 20px;
+  position: absolute;
+  background-color: white;
+  left: 0px;
+  width: 100%;
+}
+
+/*.shadow {
+  box-shadow: 5px 0 20px rgba(41, 40, 40, 0.5);
+  border-radius: 50%;
+}*/
+
+.content:before {
   content: "";
   display: block;
   height: 80%;
@@ -242,11 +322,15 @@ h4 {
   position: absolute;
   top: 10%;
   right: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   z-index: -1;
 }
-.design p {
-  padding: 10px 20px 20px 20px;
+.content p {
+  padding: 5% 8% 5% 5%;
+}
+#checkbox1,
+#checkbox2 {
+  padding: 0 20px 0 20px;
 }
 .button-design {
   background-color: #458ed2;
@@ -257,8 +341,12 @@ h4 {
   display: inline-block;
   font-size: 9pt;
   padding: 10px 20px 10px 20px;
-  margin: 25px;
+  margin: 60px 25px 25px 70px;
   border-radius: 3px;
+}
+.tab label {
+  padding: 10px;
+  background-color: white;
 }
 h5 {
   padding: 20px 20px 0px 20px;
@@ -267,12 +355,26 @@ footer {
   background-color: #3f3f3f;
   width: 100%;
 }
+.button-footer-top {
+  background-color: #efefef;
+  border: none;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 9pt;
+  padding: 10px 40px 10px 40px;
+  margin: 25px;
+  border-radius: 3px;
+}
 .footer-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   position: relative;
   background-color: #458ed2;
   color: white;
   font-size: 12pt;
-  padding: 20px;
 }
 .footer-top::after {
   position: absolute;
@@ -285,13 +387,38 @@ footer {
   border-right: 40px solid transparent;
 }
 .footer-div {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding-top: 5%;
   display: flex;
   justify-content: space-between;
 }
 .footer-div div {
+  border: 2px solid white;
   color: white;
+  width: 24%;
+}
+
+flickr-box {
+  width: 30px;
+  height: 30px;
+}
+.flickr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h6 {
+  font-size: 10pt;
+  padding-bottom: 3%;
+  width: 100%;
+}
+footer p {
+  font-size: 9pt;
+}
+.flickr-box {
+  border: 1px white;
 }
 .footer-bottom {
 }

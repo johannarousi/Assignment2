@@ -2,7 +2,9 @@
 <html>
   <head>
     <title> </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
     <header class="border-image-header">
@@ -17,7 +19,7 @@
         </div>
       </div>
       <div class="header-bottom">
-        <p>CREATE A <span style="font-style: oblique"><strong>POWERFUL</strong></span> SOLUTION NOW!</p>
+        <h2>CREATE A <span style="font-style: oblique"><strong>POWERFUL</strong></span> SOLUTION NOW!</h2>
         <a class="button-header-bottom">GET STARTED</a>
       </div>
     </header>
@@ -25,42 +27,47 @@
     <main>
       <div class="main1">
         <div>
-          <label></label>
+          
+        <label class="icon"><i class="fas fa-mobile-alt"></i></label>
           <h3>SUPERBLY RESPONSIVE</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
             deserunt perferendis, vero aspernatur error ad eius accusamus, iure
             itaque maiores adipisci possimus, blanditiis tenetur.
           </p>
+          <a class="button-main1">READ MORE</a>
         </div>
         <div>
-          <label></label>
+          <label class="icon"><i class="fas fa-desktop"></i></label>
           <h3>SQUEEKY CLEAN</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
-            sapiente. Consequuntur aperiam aut sapiente iste, blanditiis tempore
-            eos nisi velit similique asperiores nostrum enim.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+            deserunt perferendis, vero aspernatur error ad eius accusamus, iure
+            itaque maiores adipisci possimus, blanditiis tenetur.
           </p>
+          <a class="button-main1">READ MORE</a>
         </div>
         <div>
           
-          <label></label>
+       <label class="icon"><i class="fas fa-laptop"></i></label>
           <h3>MULTI PURPOSE</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-            soluta ipsa, quas inventore beatae nisi odit saepe autem non libero,
-            laborum ad sequi veritatis!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+            deserunt perferendis, vero aspernatur error ad eius accusamus, iure
+            itaque maiores adipisci possimus, blanditiis tenetur.
           </p>
+          <a class="button-main1">READ MORE</a>
         </div>
         <div>
           
-          <label></label>
+        <label class="icon"><i class="fas fa-recycle"></i></label>
           <h3>HIGHLY FLEXIBLE</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-            assumenda ipsa delectus voluptatum pariatur nam corporis alias,
-            atque laborum enim deleniti quidem vel facilis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+            deserunt perferendis, vero aspernatur error ad eius accusamus, iure
+            itaque maiores adipisci possimus, blanditiis tenetur.
           </p>
+          <a class="button-main1">READ MORE</a>
         </div>
       </div>
      <fieldset class="border-image-main"><legend>RECENT WORK</legend></fieldset>
@@ -142,10 +149,14 @@
         
         <div class="fieldset2">
           <fieldset class="border-image-main"><legend>DEVELOPMENT</legend>
-        <div class="design">
-          
-        <h4>Design</h4>
-        <h5>The Design</h5>
+            
+            <div class="tabs">
+            <div class="tab">
+        
+          <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+          <label for="checkbox1">DESIGN</label>
+          <div class="content">
+            <h5>The Design</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi
           aperiam corrupti mollitia! Accusantium, laudantium incidunt amet
@@ -157,22 +168,56 @@
           corporis officiis commodi dolore quae.
         </p>
         <a href="#" class="button-design">READ MORE</a>
+        </div>  
+        </div>
+        
+        <div class="tab">
+          <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab">
+          <label for="checkbox2">PRODUCTION</label>
+          <div class="content">
+            <h5>The Production</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi
+              aperiam corrupti mollitia! Accusantium, laudantium incidunt amet
+              corporis officiis commodi dolore quae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi
+              aperiam corrupti mollitia! Accusantium, laudantium incidunt amet
+              corporis officiis commodi dolore quae.
+            </p>
+            <a href="#" class="button-design">READ MORE</a>
+          </div>
       </div>
+    </div>
     </fieldset>
     </div>
       </div>
      
       <div class="footer-top">
           <h2>GET IN TOUCH WITH US NOW!</h2>
+          <a class="button-footer-top">CONTACT US</a>
         </div>
     </main>
     <footer>
       <div class="footer-div">
-        <div><h5>ABOUT US</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique harum exercitationem expedita corporis vel.</p></div>
-        <div><h5>LATEST TWEETS</h5><p></p></div>
-        <div><h5>LATEST POSTS</h5></div>
-        <div><h5>FLICKR</h5></div>
+        
+        
+        <div class="footer-item about"><h6>ABOUT US</h6><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quos minus ipsa accusamus officia quibusdam?</p><p>Street Name 123<br/>Road Name<br/>London<br/>+44 74139 13807</p></div>
+        <div class="footer-item tweets"><h6>LATEST TWEETS</h6><p>Jaynesh Just submitted another great item on themeforest about 3 hours ago</p><p>Jaynesh Working on an awesome theme for themeforest about three weeks ago</p></div>
+        <div class="footer-item posts"><h6>LATEST POSTS</h6><p>Lorem ipsum dolor sit amet consectetur.</p><p>Lorem ipsum dolor sit amet.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto?</p><p>Lorem ipsum dolor sit amet.</p></div>
+        <div class="footer-item flickr"><h6>FLICKR</h6>
+        <div class="flickr-box">1</div>
+        <div class="flickr-box">2</div>
+        <div class="flickr-box">3</div>
+        <div class="flickr-box">4</div>
+        <div class="flickr-box">5</div>
+        <div class="flickr-box">6</div>
+        <div class="flickr-box">7</div>
+        <div class="flickr-box">8</div>
+        </div>
+        
+        
       </div>
       <div class="footer-bottom"></div>
     </footer>
