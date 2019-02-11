@@ -17,25 +17,24 @@ header {
   flex-wrap: wrap;
 }
 .image-div {
-  width: 505px;
+  width: 47%; /*505px*/
 }
 .title-div {
-  width: 505px;
-  height: 280px;
+  width: 45%; /*505px*/
+  /* height: 280px; */
   color: white;
   text-align: left;
 }
 h1 {
   font-size: 26px;
-  padding: 25px 25px 10px 0;
+  padding: 5% 10% 3.5% 0;
   word-spacing: 4px;
 }
 .title-div p {
-  padding: 25px 25px 10px 0;
+  padding: 3.5% 10% 3.5% 0;
   font-size: 16pt;
   color: rgb(182, 179, 179);
 }
-
 .button-header {
   background-color: #458ed2;
   border: none;
@@ -46,10 +45,10 @@ h1 {
   font-size: 12pt;
   padding: 10px 40px 10px 40px;
   float: left;
-  margin: 10px 0 25px 0;
+  margin-top: 1%;
+  margin-bottom: 5%;
   border-radius: 3px;
 }
-
 #image-header {
   width: 100%;
 }
@@ -107,8 +106,8 @@ main p {
 }
 .main1 {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 6% 0 6% 0;
 }
 .icon {
@@ -129,8 +128,33 @@ main p {
   width: 24%;
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  .header-div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main1 div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .image-div {
+    width: 100px;
+  }
+  .title-div {
+    width: 480px;
+  }
+  h1 {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .title-div p {
+    padding: 3.5% 10% 3.5% 10px;
+    font-size: 12pt;
+  }
+}
 .main1 div:hover {
   background-color: white;
+  box-shadow: 20px 0 52px -20px rgba(0, 0, 0, 0.34);
 }
 .main1 div:hover:before {
   position: absolute;
@@ -181,12 +205,22 @@ legend {
 .main2 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 3% 0 6% 0;
+}
+.placeholder-img {
+  width: 100%;
 }
 .main2 div {
   width: 32%;
   background-color: white;
   position: relative;
+}
+@media (max-width: 600px) {
+  .main2 div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 .main2 div:before {
   content: "";
@@ -216,12 +250,10 @@ legend {
 h4 {
   padding: 20px 20px 0px 20px;
 }
-.placeholder-img {
-  width: 100%;
-}
 .main3 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .fieldset1 {
   padding-right: 1%;
@@ -230,6 +262,15 @@ h4 {
 .fieldset2 {
   padding-left: 1%;
   width: 33.333%;
+}
+@media screen and (max-width: 600px) {
+  .fieldset1 {
+    width: 100%;
+  }
+  .fieldset2 {
+    width: 100%;
+    margin-bottom: 350px;
+  }
 }
 .testimonials {
   display: flex;
@@ -243,6 +284,11 @@ h4 {
   padding-bottom: 4%;
   margin-bottom: 7%;
   width: 48.5%;
+}
+@media (max-width: 600px) {
+  .testimonials div {
+    margin-bottom: 50px;
+  }
 }
 .testimonials div:before {
   content: "";
@@ -285,10 +331,13 @@ h4 {
   background: #faf8f8;
   color: gray;
   padding: 20px;
+  position: relative;
 }
 .checkboxtab:checked ~ label {
   background: white;
   color: black;
+  box-shadow: 8px 0px 15px -10px rgba(0, 0, 0, 0.43);
+  z-index: 2;
 }
 .checkboxtab:checked ~ .content {
   z-index: 1;
@@ -328,18 +377,6 @@ h4 {
 h5 {
   padding: 20px 20px 0px 20px;
 }
-.button-blue-banner-footer {
-  background-color: #efefef;
-  border: none;
-  color: gray;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12pt;
-  padding: 10px 40px 10px 40px;
-  margin: 18px;
-  border-radius: 3px;
-}
 /*footer**********/
 footer {
   background-color: #3f3f3f;
@@ -351,19 +388,21 @@ footer {
   padding-top: 70px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-div div {
   color: white;
-  width: 260px;
+  width: 24%;
 }
+
 .about p,
 .tweets p {
   padding-bottom: 20px;
   padding-right: 20px;
 }
 .posts p {
-  padding: 10px 0 10px 0;
   font-style: italic;
+  padding-bottom: 10px;
 }
 .posts-border {
   border-bottom: 2px solid #343434;
@@ -391,6 +430,7 @@ footer p {
   height: 61px !important;
   margin-bottom: 4px;
 }
+
 .footer-bottom {
   background: #343434;
 }
@@ -399,6 +439,7 @@ footer p {
   margin-right: 12%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-bottom-div p {
   align-self: center;
@@ -453,3 +494,21 @@ footer p {
   font-size: 60px;
   padding-top: 5px;
 }
+@media screen and (max-width: 600px) {
+  .footer-div div {
+    width: 100%;
+  }
+}
+/*
+@media only screen and (max-width: 600px) {
+  .footer-bottom-div p {
+    width: 100%;
+  }
+  .social-media-icons {
+width: 100%;
+justify-content: flex-start;
+  }
+.social-media-icons .fab {
+  margin: 0 10px 0 10px;
+}
+}*/
