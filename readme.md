@@ -4,7 +4,7 @@ The purpose of this assignment is to practise HTML and CSS by copying an image a
 
 ## Demo
 
-[Assignment 2](https://johannarousi.github.io/Assignment2/)
+[Assignment 2](http://htmlpreview.github.io/?https://github.com/johannarousi/Assignment2/blob/master/index.html)
 
 ## Technologies
 
@@ -20,3 +20,5 @@ MIT
 Johanna Rousi
 
 ## Image
+
+![powerfully-simple](images/assignment-2.jpg)
