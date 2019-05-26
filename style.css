@@ -202,7 +202,7 @@ legend {
   text-align: center;
   padding: 10px;
 }
-.main2 {
+.main2-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -211,18 +211,18 @@ legend {
 .placeholder-img {
   width: 100%;
 }
-.main2 div {
+.main2-container div {
   width: 32%;
   background-color: white;
   position: relative;
 }
 @media (max-width: 600px) {
-  .main2 div {
+  .main2-container div {
     width: 100%;
     margin-bottom: 50px;
   }
 }
-.main2 div:before {
+.main2-container div:before {
   content: "";
   display: block;
   height: 80%;
@@ -234,7 +234,7 @@ legend {
   border-radius: 100%;
   z-index: -1;
 }
-.main2 div::after {
+.main2-container div::after {
   position: absolute;
   content: "";
   width: 0;
@@ -244,7 +244,7 @@ legend {
   border-top: 35px solid white;
   border-right: 30px solid transparent;
 }
-.main2 div p {
+.main2-container div p {
   padding: 10px 20px 20px 20px;
 }
 h4 {
@@ -457,6 +457,42 @@ footer p {
 .social-media-icons .fab:hover {
   color: rgb(233, 231, 231);
 }
+/*Pinterest tooltip is done differently than the other icons where I used the tooltip-attribute*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  content: "";
+  float: top;
+  position: absolute;
+  background: gray;
+  text-align: left;
+  color: rgb(233, 231, 231);
+  padding: 5px 25px 5px 7.5px;
+  border-radius: 2px 2px 2px 0;
+  pointer-events: none;
+  left: 15px;
+  bottom: 70px;
+  font-size: 9pt;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext::after {
+  border-right: 10px solid transparent;
+  border-top: 10px solid gray;
+  content: "";
+  height: 0;
+  left: 0px;
+  top: 25px;
+  position: absolute;
+  width: 0;
+}
+/*here the code for the other tooltips*/
 [tooltip] {
   position: relative;
 }
@@ -474,7 +510,7 @@ footer p {
   content: attr(tooltip);
   float: top;
   position: absolute;
-  background: grey;
+  background: gray;
   text-align: left;
   color: rgb(233, 231, 231);
   padding: 5px 25px 5px 7.5px;
